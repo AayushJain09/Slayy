@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { AiOutlineLogout } from 'react-icons/ai';
-import {MdTranslate} from 'react-icons/md';
+import { IoIosCart } from 'react-icons/io';
 import { BiSearch } from 'react-icons/bi';
 import { IoMdAdd } from 'react-icons/io';
 import { GoogleLogin, googleLogout  } from '@react-oauth/google';
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <span className='hidden md:block'>Upload </span>
               </button>
             </Link>
-            <MdTranslate className='text-3xl hover:text-pink-700 cursor-pointer mt-2' />
+            <IoIosCart className='text-3xl hover:text-pink-700 cursor-pointer mt-2' />
             {user.image && (
               <Link href={`/profile/${user._id}`}>
                 <div>
